@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog de Erick | PuniSoft</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">
+        <img src="img/punisoft-logo.png" alt="Logo PuniSoft" class="logo-img" />
+        PuniSoft
+      </h1>
+      <button class="nav-toggle">☰</button>
+      <nav class="nav-menu">
+        <a href="index.html">Inicio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="blog-page">
+    <section id="estructurada">
+      <div class="container">
+        <h2>¿Qué es la programación estructurada?</h2>
+        <p>
+          La programación estructurada es un paradigma que se basa en dividir un programa en pequeñas funciones reutilizables.
+          Se enfoca en el uso de estructuras como condicionales (<code>if</code>, <code>switch</code>) y bucles (<code>for</code>, <code>while</code>),
+          evitando el uso de <code>goto</code> y facilitando la legibilidad y mantenibilidad del código.
+          Este enfoque es la base de muchos lenguajes clásicos como C y Pascal, y sigue vigente en JavaScript y Python.
+        </p>
+      </div>
+    </section>
+
+    <section id="java2025">
+      <div class="container">
+        <h2>¿Vale la pena aprender Java en 2025?</h2>
+        <p>
+          A pesar del auge de lenguajes como Kotlin, Go o Python, Java mantiene su relevancia gracias a su amplio ecosistema,
+          su robustez en entornos empresariales (Spring Boot, Jakarta EE) y su presencia en Android.
+          Su sintaxis estricta y sistema de tipos aporta solidez a proyectos a gran escala y facilita la detección temprana de errores.
+        </p>
+      </div>
+    </section>
+
+    <section id="microservicios">
+      <div class="container">
+        <h2>Tendencias en Microservicios para 2025</h2>
+        <p>
+          Los microservicios siguen consolidándose como modelo de arquitectura para aplicaciones escalables.
+          En 2025, destacan el uso de arquitecturas orientadas a eventos (Event-Driven Architecture) para mejorar la reactividad,
+          y la adopción de serverless y service mesh para gestionar la comunicación y la seguridad entre servicios.
+        </p>
+      </div>
+    </section>
+
+    <section id="ai-automation">
+      <div class="container">
+        <h2>Automatización con IA en Arquitecturas Distribuidas</h2>
+        <p>
+          La inteligencia artificial está transformando la gestión de sistemas distribuidos.
+          Herramientas basadas en IA permiten escalado predictivo, detección de anomalías en tiempo real y optimización automática
+          de recursos, reduciendo la carga operativa y mejorando la resiliencia de las aplicaciones.
+        </p>
+      </div>
+    </section>
+
+    <section id="ci-cd">
+      <div class="container">
+        <h2>Integración Continua y Entrega Continua (CI/CD)</h2>
+        <p>
+          Los pipelines de CI/CD se han vuelto fundamentales para acelerar la entrega de software.
+          Plataformas como Jenkins, GitHub Actions o GitLab CI facilitan pruebas automatizadas, despliegues controlados
+          y monitoreo continuo, asegurando calidad y rapidez en cada iteración de desarrollo.
+        </p>
+      </div>
+    </section>
+
+    <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Volver arriba">↑</button>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Erick Angel Punina Quisintuña. Blog técnico de desarrollo.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Scroll-to-top button logic
+    const scrollBtn = document.querySelector('.scroll-top');
+    window.addEventListener('scroll', () => {
+      scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>

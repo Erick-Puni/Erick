@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PuniSoft | Erick P.</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">
+        <img src="img/punisoft-logo.png" alt="Logo PuniSoft" class="logo-img" />
+        PuniSoft
+      </h1>
+      <button class="nav-toggle">☰</button>
+      <nav class="nav-menu">
+        <a href="#home" class="active">Inicio</a>
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="blog.html">Blog</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="carousel">
+      <div class="carousel-container">
+        <!-- Slide 1: Bienvenida -->
+        <div class="carousel-slide hero-slide">
+          <div class="hero-content">
+            <img src="img/erick.jpg" alt="Erick Punina" class="profile-img" />
+            <h2>¡Hola! Soy Erick</h2>
+            <p>Desarrollador de software en formación, apasionado por la tecnología, los videojuegos y las soluciones útiles.</p>
+          </div>
+        </div>
+        <!-- Slide 2: Proyectos -->
+        <div class="carousel-slide">
+          <img src="img/proyectos.jpeg" alt="Proyectos">
+          <div class="carousel-caption">
+            <h3>Proyectos</h3>
+            <a href="#projects" class="carousel-btn">Ver proyectos</a>
+          </div>
+        </div>
+        <!-- Slide 3: Blog -->
+        <div class="carousel-slide">
+          <img src="img/blog.png" alt="Blog">
+          <div class="carousel-caption">
+            <h3>Blog</h3>
+            <a href="blog.html" class="carousel-btn">Leer artículos</a>
+          </div>
+        </div>
+      </div>
+      <!-- Flechas del carrusel (fuera de .carousel-container) -->
+      <button class="carousel-prev">❮</button>
+      <button class="carousel-next">❯</button>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2>Sobre mí</h2>
+        <p>
+          Me llamo Erick Angel Punina Quisintuña, y desde muy pequeño sentí una conexión especial con la tecnología.<br />
+          Disfruto crear software útil, visualmente atractivo y funcional. Además de programar, me gusta la música, el origami y los juegos que plantean retos mentales.
+        </p>
+        <p>
+          Actualmente desarrollo apps móviles, videojuegos y herramientas prácticas para la vida diaria o negocios.<br />
+          Creo en el poder de la constancia y la mejora continua. Mi meta: fundar una empresa de software real que impacte a otros.
+        </p>
+      </div>
+    </section>
+
+    <section id="blog-preview" class="blog-preview">
+      <div class="container">
+        <h2 class="blog-title">Blogs recientes</h2>
+        <div class="blog-grid">
+          <!-- Blog 1 -->
+          <div class="blog-card">
+            <div class="blog-img-wrapper">
+              <img src="img/blog-java.jpg" alt="¿Por qué Java sigue vigente?">
+              <span class="blog-date">12, JUL</span>
+            </div>
+            <div class="blog-meta">
+              Posteado por: <b>Erick P.</b> | Visto: 1543
+            </div>
+            <h3 class="blog-card-title">¿Por qué Java sigue vigente?</h3>
+            <p>¿Vale la pena aprender Java en 2025? Descubre por qué Java sigue siendo esencial para backend y Android.</p>
+            <a href="blog.html#java2025" class="blog-btn">Leer más</a>
+          </div>
+          <!-- Blog 2 -->
+          <div class="blog-card">
+            <div class="blog-img-wrapper">
+              <img src="img/blog-runner.jpg" alt="Endless Runner Android">
+              <span class="blog-date">30, JUN</span>
+            </div>
+            <div class="blog-meta">
+              Posteado por: <b>Erick P.</b> | Visto: 1201
+            </div>
+            <h3 class="blog-card-title">Cómo crear tu primer Endless Runner en Android</h3>
+            <p>Paso a paso desde la física básica hasta la publicación en Play Store. Con ejemplos reales.</p>
+            <a href="blog.html#endlessrunner" class="blog-btn">Leer más</a>
+          </div>
+        </div>
+        <div class="blog-more" style="text-align:center; margin-top:1.5rem;">
+          <a href="blog.html" class="blog-btn more-btn">Ver más artículos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="img/labtime.png" alt="LabTime">
+            <h3>LabTime</h3>
+            <p>App de asistencia en laboratorios. Desarrollo en Android Studio con Firebase.</p>
+            <a href="https://github.com/erickpunina/labtime" target="_blank">Ver en GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="img/turbodino.png" alt="Turbo Dino Run">
+            <h3>Turbo Dino Run</h3>
+            <p>Endless runner en Android estilo pixel-art. Desarrollo con Java y SurfaceView.</p>
+            <a href="https://github.com/erickpunina/turbodino" target="_blank">Ver en GitHub</a>
+          </div>
+          <div class="project-card">
+            <img src="img/converter.png" alt="MP4-to-MP3">
+            <h3>MP4-to-MP3 Batch Converter</h3>
+            <p>Herramienta CLI con Node.js para convertir lotes de MP4 a MP3.</p>
+            <a href="https://github.com/erickpunina/mp4-to-mp3" target="_blank">Ver en GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <p>¿Tienes una idea o propuesta? Escríbeme directamente por WhatsApp:</p>
+        <a href="https://wa.me/593000000000" class="whatsapp-link" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon" />
+          Enviar mensaje
+        </a>
+      </div>
+    </section>
+    <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="Volver arriba">↑</button>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 PuniSoft · Desarrollado por Erick Angel Punina Quisintuña.</p>
+    </div>
+  </footer>
+</body>
+</html>
