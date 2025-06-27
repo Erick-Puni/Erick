@@ -1,122 +1,175 @@
 <!DOCTYPE HTML>
 <html lang="es">
-	<head>
-		<title>Erick Dev</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="css/style.css" />
+  <head>
+    <title>Erick Dev</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
     <link rel="icon" href="img/punisoft-logo.png" type="image/x-icon">
-	</head>
-	<body class="is-preload">
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul class="container">
-				<li><a href="#top">Inicio</a></li>
-				<li><a href="#work">Sobre mí</a></li>
-				<li><a href="#portfolio">Proyectos</a></li>
-				<li><a href="#contact">Contacto</a></li>
-			</ul>
-		</nav>
+    <!-- Estilo NEÓN exclusivo para el botón WebClass -->
+    <style>
+      /* ===== Botón NEÓN azul: WebClass ===== */
+      .neon-webclass {
+        position: relative;
+        display: inline-block;
+        padding: 0.5em 1.4em;
+        color: #00e5ff;
+        font-weight: 600;
+        text-decoration: none;
+        border: 2px solid #00e5ff;
+        border-radius: 8px;
+        letter-spacing: 0.5px;
+        background: transparent;
+        transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow:
+          0 0 5px   #00e5ff,
+          0 0 10px  #00e5ff inset;
+        animation: neonGlow 1.5s ease-in-out infinite alternate;
+      }
+      .neon-webclass:hover,
+      .neon-webclass:focus {
+        background: #00e5ff;
+        color: #0f172a; /* contraste */
+        box-shadow:
+          0 0 6px   #00e5ff,
+          0 0 12px  #00e5ff,
+          0 0 24px  #00e5ff,
+          0 0 48px  rgba(0, 229, 255, 0.6);
+      }
+      @keyframes neonGlow {
+        0%, 100% {
+          box-shadow:
+            0 0 4px  #00e5ff,
+            0 0 8px  #00e5ff inset;
+        }
+        50% {
+          box-shadow:
+            0 0 8px  #00e5ff,
+            0 0 16px #00e5ff inset;
+        }
+      }
+    </style>
+  </head>
 
-		<!-- Home -->
-		<article id="top" class="wrapper style1">
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-5-large col-12-medium">
-						<span class="image fit"><img src="img/erick.jpg"  alt="Erick Punina" /></span>
-					</div>
-					<div class="col-8 col-7-large col-12-medium">
-						<header>
-							<h1>Hola, soy <strong>Erick Punina</strong>.</h1>
-						</header>
-						<p>Estudiante de Desarrollo de Software. Apasionado por la tecnología, los videojuegos y la creación de soluciones prácticas.</p>
-						<a href="#work" class="button large scrolly">Conoce más sobre mí</a>
-					</div>
-				</div>
-			</div>
-		</article>
+  <body class="is-preload">
 
-		<!-- Sobre mí -->
-		<article id="work" class="wrapper style2">
-			<div class="container">
-				<header>
-					<h2>Sobre mí</h2>
-				</header>
-				<div class="row aln-center">
-					<div class="col-12">
-						<p>Actualmente curso Desarrollo de Software. Me encanta diseñar y programar aplicaciones que faciliten tareas cotidianas.</p>
-						<p>En mi tiempo libre disfruto del origami, la música y experimentar con pequeños proyectos de videojuegos.</p>
-						<p>Busco crecer profesionalmente creando software de impacto y aprendiendo nuevas tecnologías cada día.</p>
-					</div>
-				</div>
-				<footer>
-					
-				</footer>
-			</div>
-		</article>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="#top">Inicio</a></li>
+        <li><a href="#work">Sobre mí</a></li>
+        <li><a href="#portfolio">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
 
-		<!-- Proyectos -->
-		<article id="portfolio" class="wrapper style3">
-			<div class="container">
-				<header>
-					<h2>Proyectos</h2>
-					<p>Estos son tres de los proyectos en los  que he trabajado:</p>
-				</header>
-				<div class="row">
-					<!-- LabTime -->
-					<div class="col-4 col-6-medium col-12-small">
-						<article class="box style2">
-							<a href="https://erick-puni.github.io/LabTime-Web/" class="image featured"><img src="img/labtime.png" alt="LabTime" /></a>
-							<h3><a href="https://erick-puni.github.io/LabTime-Web/" target="_blank">LabTime</a></h3>
-							<p>Aplicación de asistencia en laboratorios, desarrollada en Android Studio con Firebase.</p>
-						</article>
-					</div>
-					<!-- MoneyGo -->
-					<div class="col-4 col-6-medium col-12-small">
-						<article class="box style2">
-							<a href="https://github.com/Erick-Puni/MoneyGo" class="image featured" ><img src="img/moneyGo.png" alt="MoneyGo" /></a>
-							<h3><a href="https://github.com/Erick-Puni/MoneyGo" target="_blank">MoneyGo</a></h3>
-							<p>App para registrar y visualizar fácilmente gastos e ingresos económicos.</p>
-						</article>
-					</div>
-					<!-- MP4-to-MP3 -->
-					<div class="col-4 col-6-medium col-12-small">
-						<article class="box style2">
-							<a href="https://github.com/Erick-Puni/Mp4-a-Mp3" class="image featured"><img src="img/js.png" alt="MP4-to-MP3 Batch Converter" /></a>
-							<h3><a href="https://github.com/Erick-Puni/Mp4-a-Mp3" target="_blank">MP4-to-MP3 Batch Converter</a></h3>
-							<p>Herramienta CLI en Node.js para convertir múltiples archivos MP4 a MP3.</p>
-						</article>
-					</div>
-				</div>
-				<footer>
-          <p>Deseas contactarme</p>
+        <!-- NUEVO: botón WebClass con efecto neón -->
+        <li>
+          <a href="https://webclass-tau.vercel.app/index.html"
+             target="_blank"
+             class="neon-webclass">
+            WebClass
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-				</footer>
-			</div>
-		</article>
+    <!-- Home -->
+    <article id="top" class="wrapper style1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-5-large col-12-medium">
+            <span class="image fit"><img src="img/erick.jpg" alt="Erick Punina" /></span>
+          </div>
+          <div class="col-8 col-7-large col-12-medium">
+            <header>
+              <h1>Hola, soy <strong>Erick Punina</strong>.</h1>
+            </header>
+            <p>Estudiante de Desarrollo de Software. Apasionado por la tecnología, los videojuegos y la creación de soluciones prácticas.</p>
+            <a href="#work" class="button large scrolly">Conoce más sobre mí</a>
+          </div>
+        </div>
+      </div>
+    </article>
 
-		<!-- Contacto -->
-		<article id="contact" class="wrapper style4">
-			<div class="container medium">
-				<header>
-					<h2>Contacto</h2>
-				</header>
-				<div class="row">
-					<div class="col-12">
-						<p>¿Tienes alguna idea o consulta? Escríbeme directamente por WhatsApp:</p>
-						<a href="https://wa.me/593996050792" class="button large scrolly">Enviar mensaje</a>
-            
-					</div>
-				</div>
-			</div>
+    <!-- Sobre mí -->
+    <article id="work" class="wrapper style2">
+      <div class="container">
+        <header>
+          <h2>Sobre mí</h2>
+        </header>
+        <div class="row aln-center">
+          <div class="col-12">
+            <p>Actualmente curso Desarrollo de Software. Me encanta diseñar y programar aplicaciones que faciliten tareas cotidianas.</p>
+            <p>En mi tiempo libre disfruto del origami, la música y experimentar con pequeños proyectos de videojuegos.</p>
+            <p>Busco crecer profesionalmente creando software de impacto y aprendiendo nuevas tecnologías cada día.</p>
+          </div>
+        </div>
+        <footer></footer>
+      </div>
+    </article>
+
+    <!-- Proyectos -->
+    <article id="portfolio" class="wrapper style3">
+      <div class="container">
+        <header>
+          <h2>Proyectos</h2>
+          <p>Estos son tres de los proyectos en los que he trabajado:</p>
+        </header>
+        <div class="row">
+          <!-- LabTime -->
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="https://erick-puni.github.io/LabTime-Web/" class="image featured"><img src="img/labtime.png" alt="LabTime" /></a>
+              <h3><a href="https://erick-puni.github.io/LabTime-Web/" target="_blank">LabTime</a></h3>
+              <p>Aplicación de asistencia en laboratorios, desarrollada en Android Studio con Firebase.</p>
+            </article>
+          </div>
+          <!-- MoneyGo -->
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="https://github.com/Erick-Puni/MoneyGo" class="image featured"><img src="img/moneyGo.png" alt="MoneyGo" /></a>
+              <h3><a href="https://github.com/Erick-Puni/MoneyGo" target="_blank">MoneyGo</a></h3>
+              <p>App para registrar y visualizar fácilmente gastos e ingresos económicos.</p>
+            </article>
+          </div>
+          <!-- MP4-to-MP3 -->
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="https://github.com/Erick-Puni/Mp4-a-Mp3" class="image featured"><img src="img/js.png" alt="MP4-to-MP3 Batch Converter" /></a>
+              <h3><a href="https://github.com/Erick-Puni/Mp4-a-Mp3" target="_blank">MP4-to-MP3 Batch Converter</a></h3>
+              <p>Herramienta CLI en Node.js para convertir múltiples archivos MP4 a MP3.</p>
+            </article>
+          </div>
+        </div>
+        <footer>
+          <p>¿Deseas contactarme?</p>
+        </footer>
+      </div>
+    </article>
+
+    <!-- Contacto -->
+    <article id="contact" class="wrapper style4">
+      <div class="container medium">
+        <header>
+          <h2>Contacto</h2>
+        </header>
+        <div class="row">
+          <div class="col-12">
+            <p>¿Tienes alguna idea o consulta? Escríbeme directamente por WhatsApp:</p>
+            <a href="https://wa.me/593996050792" class="button large scrolly">Enviar mensaje</a>
+          </div>
+        </div>
+      </div>
       <footer>
-						<ul id="copyright">
-							<li>&copy; 2025 Erick Punina
-						</ul>
-					</footer>
-		</article>
-    
+        <ul id="copyright">
+          <li>&copy; 2025 Erick Punina</li>
+        </ul>
+      </footer>
+    </article>
 
-	</body>
+  </body>
 </html>
